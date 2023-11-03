@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // as it's a test project, we can keep token here. Else, we can shift it to .env
-const token = "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"
+const token = "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"
 const instance = axios.create({
   baseURL: 'https://api.github.com',
   headers: {
