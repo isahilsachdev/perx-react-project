@@ -16,6 +16,9 @@ const App = ({user, repos, orgs, setUserInfo, setRepos, setOrgs}) => {
   const handleUserSubmit = async (username) => {
     try {
       setLoading(true);
+      setUserInfo(null);
+      setRepos([]);
+      setOrgs([]);
 
       const userData = await fetchUserData(username);
       const repoData = await fetchUserRepositories(username);
